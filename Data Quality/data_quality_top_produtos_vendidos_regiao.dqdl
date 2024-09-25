@@ -1,0 +1,15 @@
+# Example rules: Completeness "colA" between 0.4 and 0.8, ColumnCount > 10
+Rules = [
+        RowCount between 25 and 100,
+    IsComplete "produto",
+    ColumnValues "produto" in ["Chuveiro elétrico","Smartphone","Forno elétrico","Máquina de café","Relógio inteligente","Cafeteira expresso","Secador de cabelo","Liquidificador","Aparelho de som","Cafeteira"],
+    ColumnValues "produto" in ["Chuveiro elétrico","Smartphone","Forno elétrico","Máquina de café","Relógio inteligente","Cafeteira expresso","Secador de cabelo","Liquidificador","Aparelho de som","Cafeteira"] with threshold >= 0.99,
+    ColumnLength "produto" between 8 and 20,
+    IsComplete "regiao_cliente",
+    ColumnValues "regiao_cliente" in ["Sudeste","Nordeste","Sul","Norte","Centro-Oeste"],
+    ColumnLength "regiao_cliente" between 2 and 13,
+    IsComplete "total_vendas",
+    StandardDeviation "total_vendas" between 128.49 and 142.01,
+    ColumnValues "total_vendas" between 27 and 442
+
+]

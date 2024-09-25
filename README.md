@@ -1,4 +1,4 @@
-# Curso: Construindo um Pipeline de ETL na AWS para Engenharia de Analytics Júnior
+# Curso: Engenharia de Analytics: construindo uma pipeline automatizada
 
 ## 📖 Storytelling
 
